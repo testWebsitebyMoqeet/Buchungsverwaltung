@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WaschArena Osterhofen – HW Waschanlagen | SB Autowasch & Fahrzeugpflege</title>
+  <meta name="description" content="Ihre Waschanlage in Osterhofen. SB-Waschboxen, Hochdruckreinigung & Fahrzeugpflege. Jetzt Termin buchen – schnell, gründlich & günstig. Täglich geöffnet!">
+  <meta name="keywords" content="WaschArena Osterhofen, HW Waschanlagen, Autowasch Osterhofen, SB Waschbox Osterhofen, Fahrzeugpflege Bayern, Autowäsche Deggendorf">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="HW Waschanlagen GmbH">
+  <link rel="canonical" href="https://www.waschanlage-osterhofen.de/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Waschanlage Osterhofen – SB Autowasch & Pflege">
+  <meta property="og:description" content="Ihr Autowäsche-Profi in Osterhofen. SB-Boxen, Hochdruck & Innenreinigung. Jetzt online buchen!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.waschanlage-osterhofen.de/">
+  <meta property="og:locale" content="de_DE">
+
+  <!-- Schema.org LocalBusiness + CarWash -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CarWash",
+    "name": "WaschArena Osterhofen – HW Waschanlagen GmbH",
+    "url": "https://www.wascharena-osterhofen.de",
+    "description": "SB-Waschanlage in Osterhofen mit Hochdruckreinigung, Schaumreinigung und Fahrzeugpflege.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Industriestraße 5",
+      "addressLocality": "Osterhofen",
+      "postalCode": "94486",
+      "addressCountry": "DE"
+    },
+    "telephone": "+49-8543-961829",
+    "email": "thomas.haslinger@haslinger.group",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "07:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday","Sunday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    ],
+    "priceRange": "€–€€",
+    "currenciesAccepted": "EUR",
+    "paymentAccepted": "Cash, EC-Karte",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 48.7077,
+      "longitude": 13.0157
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --blue: #0a3d6b;
+      --blue-mid: #1565a8;
+      --blue-light: #d6e9ff;
+      --accent: #f4a100;
+      --accent-dark: #c07c00;
+      --white: #ffffff;
+      --off: #f7f9fc;
+      --text: #1a2332;
+      --muted: #5a6a7e;
+      --border: #dce4ef;
+      --success: #1e7e4a;
+      --success-bg: #e8f9ee;
+      --danger: #c0392b;
+      --danger-bg: #fdecea;
+      --radius: 12px;
+      --shadow: 0 4px 24px rgba(10,61,107,0.10);
+      --shadow-lg: 0 12px 48px rgba(10,61,107,0.16);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--text);
+      background: var(--white);
+      font-size: 16px;
+      line-height: 1.65;
+    }
+
+    /* ─── COOKIE BANNER ─────────────────────────────── */
+    #cookie-banner {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 9999;
+      background: var(--blue);
+      color: var(--white);
+      padding: 18px 24px;
+      display: flex; flex-wrap: wrap; align-items: center; gap: 14px;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+    }
+    #cookie-banner p { flex: 1; min-width: 220px; font-size: 14px; opacity: 0.9; }
+    #cookie-banner a { color: var(--accent); }
+    .cookie-btns { display: flex; gap: 10px; flex-wrap: wrap; }
+    .btn-cookie-accept {
+      background: var(--accent); color: var(--blue); font-weight: 600;
+      border: none; border-radius: 8px; padding: 10px 20px; cursor: pointer; font-size: 14px;
+    }
+    .btn-cookie-reject {
+      background: transparent; color: var(--white); font-weight: 500;
+      border: 1px solid rgba(255,255,255,0.4); border-radius: 8px;
+      padding: 10px 16px; cursor: pointer; font-size: 14px;
+    }
+    #cookie-banner.hidden { display: none; }
+
+    /* ─── NAV ───────────────────────────────────────── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--blue);
+      padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    }
+    .nav-logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 26px; letter-spacing: 1px;
+      color: var(--white);
+      display: flex; align-items: center; gap: 10px;
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--accent); }
+    .nav-logo svg { width: 32px; height: 32px; fill: var(--accent); }
+    .nav-links { display: flex; gap: 6px; align-items: center; }
+    .nav-links a {
+      color: rgba(255,255,255,0.85); font-size: 14px; font-weight: 500;
+      text-decoration: none; padding: 8px 14px; border-radius: 8px;
+      transition: all 0.2s;
+    }
+    .nav-links a:hover { background: rgba(255,255,255,0.1); color: var(--white); }
+    .nav-cta {
+      background: var(--accent) !important; color: var(--blue) !important;
+      font-weight: 600 !important;
+    }
+    .nav-cta:hover { background: var(--accent-dark) !important; }
+    .nav-open { font-size: 12px; color: #7dffb0; font-weight: 500; display: flex; align-items: center; gap: 5px; }
+    .nav-open::before { content: ''; width: 7px; height: 7px; background: #7dffb0; border-radius: 50%; display: inline-block; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+    .hamburger { display: none; background: none; border: none; cursor: pointer; flex-direction: column; gap: 5px; padding: 4px; }
+    .hamburger span { width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: 0.3s; display: block; }
+    .mobile-menu { display: none; position: fixed; top: 64px; left: 0; right: 0; background: var(--blue); padding: 16px 24px 24px; z-index: 99; border-bottom: 2px solid var(--accent); }
+    .mobile-menu a { display: block; color: var(--white); text-decoration: none; padding: 12px 0; font-size: 16px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .mobile-menu.open { display: block; }
+
+    /* ─── HERO ──────────────────────────────────────── */
+    #hero {
+      background: linear-gradient(135deg, var(--blue) 0%, #0d4f8c 60%, #1565a8 100%);
+      color: var(--white);
+      padding: 72px 24px 80px;
+      position: relative; overflow: hidden;
+    }
+    #hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .hero-inner { max-width: 960px; margin: 0 auto; position: relative; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(244,161,0,0.15); border: 1px solid rgba(244,161,0,0.4);
+      color: var(--accent); padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 600;
+      margin-bottom: 20px; letter-spacing: 0.5px;
+    }
+    #hero h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(42px, 7vw, 80px);
+      line-height: 1.0; letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+    #hero h1 span { color: var(--accent); }
+    #hero p {
+      font-size: 18px; font-weight: 300; opacity: 0.85;
+      max-width: 560px; margin-bottom: 36px; line-height: 1.7;
+    }
+    .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 48px; }
+    .btn-primary {
+      background: var(--accent); color: var(--blue);
+      font-weight: 700; font-size: 16px;
+      padding: 14px 28px; border-radius: var(--radius);
+      text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
+      border: none; cursor: pointer; transition: all 0.2s;
+      box-shadow: 0 4px 16px rgba(244,161,0,0.35);
+    }
+    .btn-primary:hover { background: var(--accent-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(244,161,0,0.4); }
+    .btn-secondary {
+      background: rgba(255,255,255,0.1); color: var(--white);
+      font-weight: 500; font-size: 16px;
+      padding: 14px 28px; border-radius: var(--radius);
+      text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
+      border: 1px solid rgba(255,255,255,0.25); cursor: pointer; transition: all 0.2s;
+    }
+    .btn-secondary:hover { background: rgba(255,255,255,0.18); }
+
+    .hero-stats {
+      display: flex; flex-wrap: wrap; gap: 32px;
+      padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.12);
+    }
+    .hero-stat { }
+    .hero-stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 36px; color: var(--accent); line-height: 1; }
+    .hero-stat-label { font-size: 13px; opacity: 0.7; font-weight: 300; }
+
+    .hero-hours {
+      display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 32px;
+    }
+    .hour-chip {
+      background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 8px; padding: 10px 16px; font-size: 14px;
+    }
+    .hour-chip strong { display: block; font-size: 13px; opacity: 0.7; font-weight: 400; margin-bottom: 2px; }
+
+    /* ─── SECTION WRAPPER ───────────────────────────── */
+    section { padding: 72px 24px; }
+    .container { max-width: 960px; margin: 0 auto; }
+    .section-label {
+      font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
+      color: var(--blue-mid); margin-bottom: 12px;
+    }
+    h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(32px, 5vw, 52px);
+      letter-spacing: 1px; line-height: 1.1;
+      margin-bottom: 16px; color: var(--blue);
+    }
+    .section-sub { color: var(--muted); font-size: 17px; max-width: 540px; margin-bottom: 40px; }
+
+    /* ─── SERVICES ──────────────────────────────────── */
+    #leistungen { background: var(--off); }
+    .services-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .service-card {
+      background: var(--white); border-radius: var(--radius);
+      padding: 28px 24px; border: 1px solid var(--border);
+      transition: all 0.25s; cursor: pointer; position: relative;
+    }
+    .service-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--blue-mid); }
+    .service-icon {
+      width: 52px; height: 52px; background: var(--blue-light);
+      border-radius: 12px; display: flex; align-items: center; justify-content: center;
+      margin-bottom: 16px; font-size: 24px;
+    }
+    .service-card h3 { font-size: 18px; font-weight: 600; margin-bottom: 8px; color: var(--blue); }
+    .service-card p { font-size: 14px; color: var(--muted); line-height: 1.6; margin-bottom: 16px; }
+    .price-tag {
+      display: inline-block; background: var(--accent); color: var(--blue);
+      font-weight: 700; font-size: 18px; padding: 6px 14px; border-radius: 8px;
+    }
+    .price-from { font-size: 12px; font-weight: 400; }
+    .popular-badge {
+      position: absolute; top: 16px; right: 16px;
+      background: var(--blue); color: var(--white);
+      font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    /* ─── WARUM WIR ─────────────────────────────────── */
+    .trust-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px; margin-top: 40px;
+    }
+    .trust-item {
+      text-align: center; padding: 28px 20px;
+      border: 1px solid var(--border); border-radius: var(--radius);
+      transition: box-shadow 0.2s;
+    }
+    .trust-item:hover { box-shadow: var(--shadow); }
+    .trust-icon { font-size: 36px; margin-bottom: 12px; }
+    .trust-item h3 { font-size: 16px; font-weight: 600; color: var(--blue); margin-bottom: 6px; }
+    .trust-item p { font-size: 14px; color: var(--muted); }
+
+    /* ─── BEWERTUNGEN ───────────────────────────────── */
+    #bewertungen { background: var(--off); }
+    .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+    .review-card {
+      background: var(--white); border-radius: var(--radius); padding: 24px;
+      border: 1px solid var(--border);
+    }
+    .stars { color: var(--accent); font-size: 18px; margin-bottom: 10px; }
+    .review-text { font-size: 15px; color: var(--text); line-height: 1.6; margin-bottom: 14px; font-style: italic; }
+    .reviewer { font-size: 13px; font-weight: 600; color: var(--blue); }
+    .review-date { font-size: 12px; color: var(--muted); }
+    .google-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: 8px; padding: 8px 14px; font-size: 13px; font-weight: 500;
+      margin-top: 28px; color: var(--text);
+    }
+
+    /* ─── BOOKING ───────────────────────────────────── */
+    #buchung { background: linear-gradient(135deg, var(--blue) 0%, #1565a8 100%); color: var(--white); }
+    #buchung h2 { color: var(--white); }
+    #buchung .section-label { color: var(--accent); }
+    #buchung .section-sub { color: rgba(255,255,255,0.75); }
+
+    .booking-wrapper {
+      display: grid; grid-template-columns: 1fr 1.6fr; gap: 40px; align-items: start;
+    }
+    .booking-info h3 { font-size: 20px; font-weight: 600; margin-bottom: 16px; color: var(--white); }
+    .booking-list { list-style: none; }
+    .booking-list li {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 15px; color: rgba(255,255,255,0.85);
+      margin-bottom: 12px; line-height: 1.5;
+    }
+    .booking-list li::before { content: '✓'; color: var(--accent); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+
+    .booking-form {
+      background: var(--white); border-radius: 16px; padding: 32px;
+      box-shadow: var(--shadow-lg);
+    }
+    .booking-form h3 { font-size: 20px; font-weight: 600; color: var(--blue); margin-bottom: 24px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .form-group { margin-bottom: 16px; }
+    .form-group label { display: block; font-size: 13px; font-weight: 500; color: var(--blue); margin-bottom: 6px; }
+    .form-group label span { color: var(--danger); }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%; padding: 11px 14px; border: 1.5px solid var(--border);
+      border-radius: 8px; font-family: 'DM Sans', sans-serif; font-size: 15px;
+      color: var(--text); background: var(--off); transition: border-color 0.2s;
+      outline: none;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: var(--blue-mid); background: var(--white);
+    }
+    .form-group textarea { resize: vertical; min-height: 80px; }
+    .form-check { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 18px; }
+    .form-check input[type=checkbox] { margin-top: 3px; flex-shrink: 0; width: 17px; height: 17px; cursor: pointer; accent-color: var(--blue); }
+    .form-check label { font-size: 13px; color: var(--muted); line-height: 1.5; }
+    .form-check a { color: var(--blue-mid); }
+    .btn-submit {
+      width: 100%; background: var(--accent); color: var(--blue);
+      font-weight: 700; font-size: 17px; padding: 15px;
+      border-radius: var(--radius); border: none; cursor: pointer;
+      transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 8px;
+      box-shadow: 0 4px 16px rgba(244,161,0,0.3);
+    }
+    .btn-submit:hover { background: var(--accent-dark); transform: translateY(-2px); }
+    .btn-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+    .form-notice { font-size: 12px; color: var(--muted); text-align: center; margin-top: 10px; }
+
+    .form-success {
+      background: var(--success-bg); border: 1px solid #a8dfc1;
+      border-radius: 12px; padding: 20px; text-align: center;
+      display: none;
+    }
+    .form-success.show { display: block; }
+    .form-success h4 { color: var(--success); font-size: 18px; font-weight: 600; margin-bottom: 8px; }
+    .form-success p { color: #2d7a50; font-size: 14px; }
+
+    /* ─── STANDORT ──────────────────────────────────── */
+    #standort { background: var(--off); }
+    .standort-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+    .standort-info h3 { font-size: 20px; font-weight: 600; color: var(--blue); margin-bottom: 20px; }
+    .info-list { list-style: none; }
+    .info-list li {
+      display: flex; align-items: flex-start; gap: 12px;
+      padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 15px;
+    }
+    .info-list li:last-child { border-bottom: none; }
+    .info-list .icon { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+    .info-list strong { display: block; font-size: 13px; color: var(--muted); font-weight: 500; }
+    .map-placeholder {
+      background: var(--blue-light); border-radius: var(--radius);
+      min-height: 300px; display: flex; align-items: center; justify-content: center;
+      flex-direction: column; gap: 12px; border: 2px dashed var(--border);
+      text-align: center; padding: 24px;
+    }
+    .map-placeholder p { color: var(--muted); font-size: 14px; }
+    .map-link {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--blue); color: var(--white);
+      padding: 12px 20px; border-radius: 8px; text-decoration: none;
+      font-weight: 500; font-size: 14px; transition: background 0.2s;
+    }
+    .map-link:hover { background: var(--blue-mid); }
+
+    /* ─── FAQ ───────────────────────────────────────── */
+    .faq-list { max-width: 720px; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-q {
+      width: 100%; text-align: left; background: none; border: none;
+      padding: 18px 0; display: flex; justify-content: space-between; align-items: center;
+      cursor: pointer; font-family: 'DM Sans', sans-serif; font-size: 16px;
+      font-weight: 500; color: var(--text); gap: 12px;
+    }
+    .faq-q .arrow { font-size: 20px; color: var(--blue-mid); transition: transform 0.3s; flex-shrink: 0; }
+    .faq-q.open .arrow { transform: rotate(180deg); }
+    .faq-a { display: none; padding: 0 0 18px; color: var(--muted); font-size: 15px; line-height: 1.7; }
+    .faq-a.open { display: block; }
+
+    /* ─── FOOTER ────────────────────────────────────── */
+    footer {
+      background: var(--blue); color: rgba(255,255,255,0.75);
+      padding: 48px 24px 24px;
+    }
+    .footer-inner { max-width: 960px; margin: 0 auto; }
+    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 36px; }
+    .footer-brand { }
+    .footer-logo {
+      font-family: 'Bebas Neue', sans-serif; font-size: 28px;
+      color: var(--white); margin-bottom: 12px; display: block;
+    }
+    .footer-logo span { color: var(--accent); }
+    .footer-desc { font-size: 14px; line-height: 1.6; margin-bottom: 16px; }
+    .footer-contact a { display: block; color: var(--accent); font-size: 15px; font-weight: 500; text-decoration: none; margin-bottom: 6px; }
+    .footer-col h4 { color: var(--white); font-size: 14px; font-weight: 600; margin-bottom: 14px; letter-spacing: 0.5px; }
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: 8px; }
+    .footer-links a { color: rgba(255,255,255,0.65); font-size: 14px; text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--accent); }
+    .footer-hours span { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 6px; gap: 16px; }
+    .footer-hours .time { color: var(--white); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;
+      display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
+      gap: 12px; font-size: 13px;
+    }
+    .footer-bottom a { color: rgba(255,255,255,0.55); text-decoration: none; margin-left: 16px; transition: color 0.2s; }
+    .footer-bottom a:hover { color: var(--accent); }
+
+    /* ─── SCROLL TO TOP ─────────────────────────────── */
+    #scrollTop {
+      position: fixed; bottom: 80px; right: 20px; z-index: 50;
+      background: var(--blue); color: var(--white); border: none;
+      width: 44px; height: 44px; border-radius: 50%; cursor: pointer;
+      font-size: 20px; box-shadow: var(--shadow); transition: all 0.2s;
+      display: none; align-items: center; justify-content: center;
+    }
+    #scrollTop.show { display: flex; }
+    #scrollTop:hover { background: var(--blue-mid); transform: translateY(-2px); }
+
+    /* ─── RESPONSIVE ────────────────────────────────── */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .booking-wrapper { grid-template-columns: 1fr; }
+      .booking-info { display: none; }
+      .form-row { grid-template-columns: 1fr; }
+      .standort-grid { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr; gap: 28px; }
+      #hero { padding: 48px 24px 56px; }
+    }
+
+    /* ─── ANIMATE ON SCROLL ─────────────────────────── */
+    .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .fade-up.visible { opacity: 1; transform: none; }
+  </style>
+</head>
+<body>
+
+<!-- COOKIE BANNER (DSGVO-konform) -->
+<div id="cookie-banner" role="banner" aria-label="Cookie-Einwilligung">
+  <p>
+    Wir verwenden Cookies, um Ihnen die bestmögliche Nutzung unserer Website zu ermöglichen. Einige sind technisch notwendig, andere helfen uns, diese Website zu verbessern. Weitere Infos in unserer
+    <a href="#" onclick="openLegal('datenschutz'); return false;">Datenschutzerklärung</a>.
+  </p>
+  <div class="cookie-btns">
+    <button class="btn-cookie-accept" id="cookie-accept" onclick="acceptCookies()">Alle akzeptieren</button>
+    <button class="btn-cookie-reject" onclick="rejectCookies()">Nur notwendige</button>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav role="navigation" aria-label="Hauptnavigation">
+  <a href="#" class="nav-logo" aria-label="WaschArena Osterhofen – Startseite">
+    <img src="logo.png" alt="WaschArena Osterhofen Logo" style="height:48px; width:auto;">
+  </a>
+  <div class="nav-links">
+    <span class="nav-open" aria-label="Jetzt geöffnet">Geöffnet</span>
+    <a href="#leistungen">Leistungen</a>
+    <a href="#bewertungen">Bewertungen</a>
+    <a href="#standort">Standort</a>
+    <a href="#faq">FAQ</a>
+    <a href="#buchung" class="nav-cta">Jetzt buchen →</a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+  <a href="#leistungen" onclick="closeMobile()">Leistungen</a>
+  <a href="#bewertungen" onclick="closeMobile()">Bewertungen</a>
+  <a href="#standort" onclick="closeMobile()">Standort & Öffnungszeiten</a>
+  <a href="#faq" onclick="closeMobile()">FAQ</a>
+  <a href="#buchung" onclick="closeMobile()" style="color: var(--accent); font-weight:600">→ Jetzt buchen</a>
+  <a href="rechtliches.html" onclick="closeMobile()">Impressum & Datenschutz</a>
+</div>
+
+<!-- HERO -->
+<section id="hero" role="banner">
+  <div class="hero-inner">
+    <div class="hero-badge">⭐ 4,8 / 5 auf Google · Über 300 Bewertungen</div>
+    <h1>Ihr Auto glänzt<br><span>wie neu</span><br>in Osterhofen.</h1>
+    <p>Professionelle Fahrzeugwäsche & Pflege direkt vor Ort. SB-Waschboxen, Hochdruckreinigung und Innenreinigung – schnell, gründlich und günstig.</p>
+
+    <div class="hero-hours">
+      <div class="hour-chip"><strong>Mo – Fr</strong>07:00 – 20:00 Uhr</div>
+      <div class="hour-chip"><strong>Sa – So</strong>08:00 – 18:00 Uhr</div>
+      <div class="hour-chip" style="background:rgba(125,255,176,0.12); border-color:rgba(125,255,176,0.3)"><strong style="color:#7dffb0">Status</strong><span style="color:#7dffb0; font-weight:600">● Jetzt geöffnet</span></div>
+    </div>
+
+    <div class="hero-ctas">
+      <a href="#buchung" class="btn-primary">📅 Termin buchen</a>
+      <a href="#leistungen" class="btn-secondary">Preise ansehen →</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="hero-stat-num">5+</div><div class="hero-stat-label">Waschanlagen</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">300+</div><div class="hero-stat-label">Begeisterte Kunden</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">4,8★</div><div class="hero-stat-label">Google Bewertung</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">10+</div><div class="hero-stat-label">Jahre Erfahrung</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- LEISTUNGEN -->
+<section id="leistungen" aria-labelledby="leistungen-title">
+  <div class="container">
+    <p class="section-label">Unsere Leistungen</p>
+    <h2 id="leistungen-title">Wählen Sie Ihr Wunschpaket</h2>
+    <p class="section-sub">Von der schnellen Außenwäsche bis zur kompletten Fahrzeugpflege – wir haben das passende Angebot für Sie.</p>
+
+    <div class="services-grid">
+      <div class="service-card fade-up" onclick="selectService('Außenwäsche Basic')">
+        <div class="service-icon">🚿</div>
+        <h3>Außenwäsche Basic</h3>
+        <p>Hochdruckreinigung, Schaumvorlage, Klarspülung und Trocknung. Perfekt für den schnellen täglichen Waschtag.</p>
+        <div class="price-tag"><span class="price-from">ab </span>5,00 €</div>
+      </div>
+
+      <div class="service-card fade-up" onclick="selectService('Komfort-Wäsche')">
+        <span class="popular-badge">Beliebt</span>
+        <div class="service-icon">✨</div>
+        <h3>Komfort-Wäsche</h3>
+        <p>Außenwäsche Plus, Felgenreiniger, Heißwachs-Versiegelung und Cockpit-Pflege inklusive. Das Rundum-sorglos-Paket.</p>
+        <div class="price-tag"><span class="price-from">ab </span>9,00 €</div>
+      </div>
+
+      <div class="service-card fade-up" onclick="selectService('Premium Komplettpaket')">
+        <div class="service-icon">💎</div>
+        <h3>Premium Komplett</h3>
+        <p>Alles inklusive: Außenwäsche, Felgen, Unterbodenschutz, Wachs-Versiegelung und vollständige Innenreinigung.</p>
+        <div class="price-tag"><span class="price-from">ab </span>15,00 €</div>
+      </div>
+
+      <div class="service-card fade-up" onclick="selectService('SB-Waschbox')">
+        <div class="service-icon">🪣</div>
+        <h3>SB-Waschbox</h3>
+        <p>Selber waschen, selber wählen. Hochdrucklanze, Schaumkanone, Bürsten und Staubsauger stehen bereit.</p>
+        <div class="price-tag"><span class="price-from">ab </span>1,00 € / Min.</div>
+      </div>
+
+      <div class="service-card fade-up" onclick="selectService('Innenreinigung')">
+        <div class="service-icon">🪑</div>
+        <h3>Innenreinigung</h3>
+        <p>Gründliche Reinigung des Fahrzeuginnenraums: Saugservice, Cockpit-Pflege, Fensterputzen und Teppichreinigung.</p>
+        <div class="price-tag"><span class="price-from">ab </span>12,00 €</div>
+      </div>
+
+      <div class="service-card fade-up" onclick="selectService('Polierservice')">
+        <div class="service-icon">🔄</div>
+        <h3>Polierservice</h3>
+        <p>Professionelle Lackpflege und Politur für langanhaltenden Glanz und optimalen Lackschutz. Auf Anfrage buchbar.</p>
+        <div class="price-tag"><span class="price-from">ab </span>29,00 €</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WARUM WIR -->
+<section id="vorteile" aria-labelledby="vorteile-title">
+  <div class="container">
+    <p class="section-label">Warum Waschanlage Osterhofen</p>
+    <h2 id="vorteile-title">Mehr als nur sauber.</h2>
+    <p class="section-sub">Wir stehen für Qualität, Fairness und echten Service. Das schätzen unsere Stammkunden seit über 10 Jahren.</p>
+    <div class="trust-grid">
+      <div class="trust-item fade-up">
+        <div class="trust-icon">⚡</div>
+        <h3>Schnell & Effizient</h3>
+        <p>Die meisten Fahrzeuge sind in unter 20 Minuten frisch und sauber.</p>
+      </div>
+      <div class="trust-item fade-up">
+        <div class="trust-icon">💰</div>
+        <h3>Faire Preise</h3>
+        <p>Transparente Preise, keine versteckten Kosten – bereits ab 5,00 €.</p>
+      </div>
+      <div class="trust-item fade-up">
+        <div class="trust-icon">🌿</div>
+        <h3>Umweltfreundlich</h3>
+        <p>Biologisch abbaubare Reinigungsmittel und Wasserrückgewinnung.</p>
+      </div>
+      <div class="trust-item fade-up">
+        <div class="trust-icon">🏆</div>
+        <h3>Top Ausrüstung</h3>
+        <p>Moderne WashTec-Technologie für schonende und gründliche Reinigung.</p>
+      </div>
+      <div class="trust-item fade-up">
+        <div class="trust-icon">📍</div>
+        <h3>Zentrale Lage</h3>
+        <p>Gut erreichbar in Osterhofen, mit ausreichend Parkplätzen vor Ort.</p>
+      </div>
+      <div class="trust-item fade-up">
+        <div class="trust-icon">💳</div>
+        <h3>Einfache Zahlung</h3>
+        <p>Bar oder EC-Karte – unkompliziert und flexibel bezahlen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEWERTUNGEN -->
+<section id="bewertungen" aria-labelledby="bewertungen-title">
+  <div class="container">
+    <p class="section-label">Kundenstimmen</p>
+    <h2 id="bewertungen-title">Das sagen unsere Kunden.</h2>
+    <p class="section-sub">Überzeugen Sie sich selbst – echte Bewertungen von echten Kunden aus der Region.</p>
+    <div class="reviews-grid">
+      <div class="review-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">„Seit Jahren mein Auto-Wasch-Stamm in Osterhofen. Immer sauber, immer pünktlich, immer freundlich. Sehr zu empfehlen!"</p>
+        <div class="reviewer">Michael B.</div>
+        <div class="review-date">Osterhofen · vor 2 Wochen</div>
+      </div>
+      <div class="review-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">„Das Premium-Paket lohnt sich wirklich. Lack glänzt wie am ersten Tag. Preis-Leistung absolut top für die Region!"</p>
+        <div class="reviewer">Sandra M.</div>
+        <div class="review-date">Deggendorf · vor 1 Monat</div>
+      </div>
+      <div class="review-card fade-up">
+        <div class="stars">★★★★☆</div>
+        <p class="review-text">„Die SB-Waschbox ist perfekt – immer sauber, gut ausgerüstet. Nur manchmal etwas Wartezeit am Wochenende."</p>
+        <div class="reviewer">Thomas K.</div>
+        <div class="review-date">Osterhofen · vor 3 Wochen</div>
+      </div>
+    </div>
+    <a href="https://g.page/waschanlage-osterhofen/review" target="_blank" rel="noopener noreferrer" class="google-badge" aria-label="Bewertung auf Google hinterlassen">
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path fill="#4285F4" d="M17.64 9.2c0-.638-.057-1.252-.164-1.84H9v3.48h4.844c-.209 1.126-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.874 2.684-6.615z"/><path fill="#34A853" d="M9 18c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.836.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332C2.438 15.983 5.482 18 9 18z"/><path fill="#FBBC05" d="M3.964 10.71c-.18-.54-.282-1.117-.282-1.71s.102-1.17.282-1.71V4.958H.957C.347 6.173 0 7.548 0 9s.348 2.827.957 4.042l3.007-2.332z"/><path fill="#EA4335" d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0 5.482 0 2.438 2.017.957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58z"/></svg>
+      Uns auf Google bewerten
+    </a>
+  </div>
+</section>
+
+<!-- BUCHUNG -->
+<section id="buchung" aria-labelledby="buchung-title">
+  <div class="container">
+    <p class="section-label">Online Buchung</p>
+    <h2 id="buchung-title">Termin reservieren.</h2>
+    <p class="section-sub">Wählen Sie Ihren Wunschtermin – wir bestätigen per E-Mail oder Telefon innerhalb von wenigen Stunden.</p>
+
+    <div class="booking-wrapper">
+      <div class="booking-info">
+        <h3>Warum online buchen?</h3>
+        <ul class="booking-list">
+          <li>Keine Wartezeit – Ihren Wunschtermin sichern</li>
+          <li>Bestätigung per E-Mail in wenigen Stunden</li>
+          <li>Kostenlose Stornierung bis 24h vorher</li>
+          <li>Alle Leistungen direkt auswählen</li>
+          <li>Auch für Firmenflotten buchbar</li>
+          <li>Bezahlung bequem vor Ort</li>
+        </ul>
+        <div style="margin-top: 28px; padding: 20px; background: rgba(255,255,255,0.08); border-radius: 12px; border: 1px solid rgba(255,255,255,0.12);">
+          <p style="font-size: 14px; color: rgba(255,255,255,0.75); margin-bottom: 4px;">📞 Lieber anrufen?</p>
+          <a href="tel:+498543961829" style="font-size: 20px; font-weight: 700; color: var(--accent); text-decoration: none;">+49 8543 9618 29</a>
+          <p style="font-size: 13px; color: rgba(255,255,255,0.5); margin-top: 4px;">Mo – Fr: 07:00 – 20:00 Uhr</p>
+        </div>
+      </div>
+
+      <div class="booking-form">
+        <h3>Termin anfragen</h3>
+        <div id="form-success" class="form-success" role="alert">
+          <h4>✅ Buchungsanfrage gesendet!</h4>
+          <p>Vielen Dank! Wir bestätigen Ihren Termin schnellstmöglich per E-Mail oder Telefon.</p>
+        </div>
+        <form id="booking-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="vorname">Vorname <span aria-hidden="true">*</span></label>
+              <input type="text" id="vorname" name="vorname" placeholder="Max" required autocomplete="given-name">
+            </div>
+            <div class="form-group">
+              <label for="nachname">Nachname <span aria-hidden="true">*</span></label>
+              <input type="text" id="nachname" name="nachname" placeholder="Mustermann" required autocomplete="family-name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">E-Mail <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" placeholder="max@email.de" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="telefon">Telefon</label>
+              <input type="tel" id="telefon" name="telefon" placeholder="+49 9932 ..." autocomplete="tel">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="leistung">Gewünschte Leistung <span aria-hidden="true">*</span></label>
+            <select id="leistung" name="leistung" required>
+              <option value="">– Bitte wählen –</option>
+              <option value="Außenwäsche Basic">Außenwäsche Basic (ab 5,00 €)</option>
+              <option value="Komfort-Wäsche">Komfort-Wäsche (ab 9,00 €)</option>
+              <option value="Premium Komplettpaket">Premium Komplett (ab 15,00 €)</option>
+              <option value="SB-Waschbox">SB-Waschbox (ab 1,00 €/Min.)</option>
+              <option value="Innenreinigung">Innenreinigung (ab 12,00 €)</option>
+              <option value="Polierservice">Polierservice (ab 29,00 €)</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="datum">Wunschdatum <span aria-hidden="true">*</span></label>
+              <input type="date" id="datum" name="datum" required>
+            </div>
+            <div class="form-group">
+              <label for="uhrzeit">Wunschuhrzeit <span aria-hidden="true">*</span></label>
+              <select id="uhrzeit" name="uhrzeit" required>
+                <option value="">– Uhrzeit –</option>
+                <option>07:00 – 08:00</option>
+                <option>08:00 – 09:00</option>
+                <option>09:00 – 10:00</option>
+                <option>10:00 – 11:00</option>
+                <option>11:00 – 12:00</option>
+                <option>13:00 – 14:00</option>
+                <option>14:00 – 15:00</option>
+                <option>15:00 – 16:00</option>
+                <option>16:00 – 17:00</option>
+                <option>17:00 – 18:00</option>
+                <option>18:00 – 19:00</option>
+                <option>19:00 – 20:00</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fahrzeug">Fahrzeugtyp</label>
+            <select id="fahrzeug" name="fahrzeug">
+              <option value="">– Bitte wählen (optional) –</option>
+              <option>PKW / Kleinwagen</option>
+              <option>Mittelklasse</option>
+              <option>SUV / Kombi</option>
+              <option>Van / Transporter</option>
+              <option>LKW / Sonstiges</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="nachricht">Anmerkungen</label>
+            <textarea id="nachricht" name="nachricht" placeholder="z.B. besondere Wünsche, Firmenflotte, …"></textarea>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="datenschutz" name="datenschutz" required>
+            <label for="datenschutz">
+              Ich habe die <a href="#" onclick="openLegal('datenschutz'); return false;">Datenschutzerklärung</a> gelesen und willige in die Verarbeitung meiner Daten zur Terminbuchung gemäß DSGVO ein. <span style="color:var(--danger)">*</span>
+            </label>
+          </div>
+          <button type="submit" class="btn-submit" id="submit-btn">
+            📅 Anfrage absenden
+          </button>
+          <p class="form-notice">Pflichtfelder sind mit * gekennzeichnet. Bezahlung erfolgt vor Ort.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STANDORT -->
+<section id="standort" aria-labelledby="standort-title">
+  <div class="container">
+    <p class="section-label">Standort & Öffnungszeiten</p>
+    <h2 id="standort-title">Einfach zu finden.</h2>
+    <div class="standort-grid">
+      <div class="standort-info">
+        <h3>Kontakt & Anfahrt</h3>
+        <ul class="info-list">
+          <li>
+            <span class="icon" aria-hidden="true">📍</span>
+            <div><strong>Adresse</strong>Industriestraße 5, 94486 Osterhofen<br>Gewerbegebiet Industriestraße, kostenloser Parkplatz</div>
+          </li>
+          <li>
+            <span class="icon" aria-hidden="true">📞</span>
+            <div><strong>Telefon</strong><a href="tel:+498543961829" style="color:var(--blue-mid); text-decoration:none; font-weight:600">+49 8543 9618 29</a></div>
+          </li>
+          <li>
+            <span class="icon" aria-hidden="true">✉️</span>
+            <div><strong>E-Mail</strong><a href="mailto:thomas.haslinger@haslinger.group" style="color:var(--blue-mid); text-decoration:none">thomas.haslinger@haslinger.group</a></div>
+          </li>
+          <li>
+            <span class="icon" aria-hidden="true">🕐</span>
+            <div>
+              <strong>Öffnungszeiten</strong>
+              Mo – Fr: <b>07:00 – 20:00 Uhr</b><br>
+              Sa – So: <b>08:00 – 18:00 Uhr</b><br>
+              Feiertage: <b>09:00 – 16:00 Uhr</b>
+            </div>
+          </li>
+          <li>
+            <span class="icon" aria-hidden="true">💳</span>
+            <div><strong>Zahlung</strong>Bar & EC-Karte an der Kasse</div>
+          </li>
+        </ul>
+        <a href="https://maps.google.com/?q=Industriestraße+5+94486+Osterhofen" target="_blank" rel="noopener noreferrer" class="map-link" style="margin-top:16px; display:inline-flex">
+          🗺️ Route in Google Maps
+        </a>
+      </div>
+      <div style="border-radius: var(--radius); overflow: hidden; min-height: 300px;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9!2d13.0157!3d48.7077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47724a6e2f0b1111%3A0x0!2sIndustriestra%C3%9Fe+5%2C+94486+Osterhofen!5e0!3m2!1sde!2sde!4v1700000000000!5m2!1sde!2sde"
+          width="100%" height="340" style="border:0; display:block;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="WaschArena Osterhofen – Industriestraße 5, 94486 Osterhofen"
+          aria-label="Google Maps Karte: WaschArena Osterhofen">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" aria-labelledby="faq-title">
+  <div class="container">
+    <p class="section-label">Häufige Fragen</p>
+    <h2 id="faq-title">Fragen & Antworten.</h2>
+    <div class="faq-list" role="list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+          Muss ich einen Termin buchen oder kann ich einfach vorbeikommen?
+          <span class="arrow" aria-hidden="true">▼</span>
+        </button>
+        <div class="faq-a" role="region">Sie können jederzeit ohne Termin vorbeikommen. Eine Online-Buchung ist jedoch empfehlenswert, um Wartezeiten zu vermeiden – besonders am Wochenende.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+          Wie lange dauert eine Fahrzeugwäsche?
+          <span class="arrow" aria-hidden="true">▼</span>
+        </button>
+        <div class="faq-a" role="region">Die Außenwäsche dauert ca. 5–10 Minuten, das Komfort-Paket ca. 15–20 Minuten. Das Premium-Komplett-Paket inklusive Innenreinigung kann bis zu 45 Minuten in Anspruch nehmen.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+          Wie bezahle ich für die Wäsche?
+          <span class="arrow" aria-hidden="true">▼</span>
+        </button>
+        <div class="faq-a" role="region">Wir akzeptieren Barzahlung und EC-Karte an der Kasse vor Ort. Eine Vorauszahlung ist nicht notwendig.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+          Sind Ihre Reinigungsmittel lackschonend?
+          <span class="arrow" aria-hidden="true">▼</span>
+        </button>
+        <div class="faq-a" role="region">Ja, wir verwenden ausschließlich pH-neutrale und lackschonende Reinigungsmittel, die biologisch abbaubar sind. Unsere WashTec-Technologie schützt Ihren Lack optimal.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+          Kann ich als Firmenkunde mehrere Fahrzeuge gleichzeitig buchen?
+          <span class="arrow" aria-hidden="true">▼</span>
+        </button>
+        <div class="faq-a" role="region">Ja! Für Firmenflotten bieten wir Sonderkonditionen an. Nutzen Sie einfach das Buchungsformular und vermerken Sie „Firmenflotte" in den Anmerkungen, oder rufen Sie uns direkt an.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+          Was passiert bei schlechtem Wetter?
+          <span class="arrow" aria-hidden="true">▼</span>
+        </button>
+        <div class="faq-a" role="region">Unsere Anlage ist überdacht und wetterunabhängig nutzbar. Bei extremen Wetterbedingungen (Sturm, Eis) können wir jedoch aus Sicherheitsgründen kurzzeitig schließen. Wir informieren Sie dann per E-Mail.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-logo">WaschArena <span>Osterhofen</span></span>
+        <p class="footer-desc">HW Waschanlagen GmbH – Ihr lokaler Partner für professionelle Fahrzeugwäsche und Pflege in Osterhofen. Schnell, gründlich und günstig – seit über 10 Jahren.</p>
+        <div class="footer-contact">
+          <a href="tel:+498543961829">📞 +49 8543 9618 29</a>
+          <a href="mailto:thomas.haslinger@haslinger.group">✉️ thomas.haslinger@haslinger.group</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#leistungen">Leistungen & Preise</a></li>
+          <li><a href="#bewertungen">Kundenbewertungen</a></li>
+          <li><a href="#buchung">Termin buchen</a></li>
+          <li><a href="#standort">Standort & Anfahrt</a></li>
+          <li><a href="#faq">Häufige Fragen</a></li>
+          <li><a href="#" onclick="openLegal('impressum'); return false;">Impressum</a></li>
+          <li><a href="#" onclick="openLegal('datenschutz'); return false;">Datenschutz</a></li>
+          <li><a href="admin.html">Buchungsverwaltung</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Öffnungszeiten</h4>
+        <div class="footer-hours">
+          <span>Mo – Fr <span class="time">07:00 – 20:00</span></span>
+          <span>Sa – So <span class="time">08:00 – 18:00</span></span>
+          <span>Feiertage <span class="time">09:00 – 16:00</span></span>
+        </div>
+        <div style="margin-top:16px; padding:12px; background:rgba(125,255,176,0.08); border-radius:8px; border:1px solid rgba(125,255,176,0.2)">
+          <p style="font-size:13px; color:#7dffb0; font-weight:500">● Derzeit geöffnet</p>
+          <p style="font-size:12px; opacity:0.6; margin-top:2px">Schließt heute um 20:00 Uhr</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 WaschArena Osterhofen – HW Waschanlagen GmbH. Alle Rechte vorbehalten.</span>
+      <div>
+        <a href="#" onclick="openLegal('impressum'); return false;">Impressum</a>
+        <a href="#" onclick="openLegal('datenschutz'); return false;">Datenschutz</a>
+        <a href="#" onclick="openLegal('agb'); return false;">AGB</a>
+        <a href="#" onclick="openLegal('widerruf'); return false;">Widerrufsrecht</a>
+        <a href="#" onclick="openLegal('cookies'); return false;">Cookie-Richtlinie</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to top -->
+<button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Nach oben scrollen">↑</button>
+
+<script>
+// ─── COOKIE BANNER ─────────────────────────────────────────
+function acceptCookies() {
+  localStorage.setItem('cookie_consent', 'accepted');
+  document.getElementById('cookie-banner').classList.add('hidden');
+}
+function rejectCookies() {
+  localStorage.setItem('cookie_consent', 'essential');
+  document.getElementById('cookie-banner').classList.add('hidden');
+}
+window.addEventListener('DOMContentLoaded', function() {
+  if (localStorage.getItem('cookie_consent')) {
+    document.getElementById('cookie-banner').classList.add('hidden');
+  }
+  // Set min date to today
+  const today = new Date().toISOString().split('T')[0];
+  document.getElementById('datum').setAttribute('min', today);
+});
+
+// ─── MOBILE MENU ────────────────────────────────────────────
+function closeMobile() {
+  document.getElementById('mobile-menu').classList.remove('open');
+  document.getElementById('hamburger').setAttribute('aria-expanded', 'false');
+  document.getElementById('mobile-menu').setAttribute('aria-hidden', 'true');
+}
+document.getElementById('hamburger').addEventListener('click', function() {
+  const menu = document.getElementById('mobile-menu');
+  const open = menu.classList.toggle('open');
+  this.setAttribute('aria-expanded', open);
+  menu.setAttribute('aria-hidden', !open);
+});
+
+// ─── FAQ ACCORDION ──────────────────────────────────────────
+function toggleFaq(btn) {
+  const answer = btn.nextElementSibling;
+  const isOpen = answer.classList.toggle('open');
+  btn.classList.toggle('open', isOpen);
+  btn.setAttribute('aria-expanded', isOpen);
+}
+
+// ─── SERVICE CARD → BOOKING FORM ────────────────────────────
+function selectService(name) {
+  const sel = document.getElementById('leistung');
+  for (let i = 0; i < sel.options.length; i++) {
+    if (sel.options[i].value === name) { sel.selectedIndex = i; break; }
+  }
+  document.getElementById('buchung').scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+// ─── BOOKING FORM SUBMIT ─────────────────────────────────────
+document.getElementById('booking-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submit-btn');
+
+  // Basic validation
+  const required = this.querySelectorAll('[required]');
+  let valid = true;
+  required.forEach(field => {
+    if (!field.value.trim() || (field.type === 'checkbox' && !field.checked)) {
+      field.style.borderColor = '#c0392b';
+      valid = false;
+    } else { field.style.borderColor = ''; }
+  });
+  if (!valid) {
+    const first = this.querySelector('[required]:invalid, [required][style*="c0392b"]');
+    if (first) first.focus();
+    return;
+  }
+
+  // Simulate submission
+  btn.disabled = true;
+  btn.textContent = '⏳ Wird gesendet…';
+
+  // Collect data for "backend" storage
+  const data = {
+    id: 'BUC-' + Date.now(),
+    timestamp: new Date().toLocaleString('de-DE'),
+    vorname: document.getElementById('vorname').value,
+    nachname: document.getElementById('nachname').value,
+    email: document.getElementById('email').value,
+    telefon: document.getElementById('telefon').value,
+    leistung: document.getElementById('leistung').value,
+    datum: document.getElementById('datum').value,
+    uhrzeit: document.getElementById('uhrzeit').value,
+    fahrzeug: document.getElementById('fahrzeug').value,
+    nachricht: document.getElementById('nachricht').value,
+    status: 'Neu'
+  };
+
+  // Save to localStorage for backend demo
+  const bookings = JSON.parse(localStorage.getItem('buchungen') || '[]');
+  bookings.unshift(data);
+  localStorage.setItem('buchungen', JSON.stringify(bookings));
+
+  setTimeout(() => {
+    document.getElementById('booking-form').style.display = 'none';
+    document.getElementById('form-success').classList.add('show');
+  }, 800);
+});
+
+// ─── SCROLL TOP BUTTON ───────────────────────────────────────
+window.addEventListener('scroll', function() {
+  const btn = document.getElementById('scrollTop');
+  btn.classList.toggle('show', window.scrollY > 400);
+});
+
+// ─── FADE-UP ON SCROLL ───────────────────────────────────────
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+<!-- ═══════════════════════════════════════════════ -->
+<!-- LEGAL MODAL                                    -->
+<!-- ═══════════════════════════════════════════════ -->
+<div id="legal-modal-overlay" onclick="closeLegalModal(event)" role="dialog" aria-modal="true" aria-labelledby="legal-modal-title" style="
+  display:none; position:fixed; inset:0; z-index:2000;
+  background:rgba(10,30,60,0.65); backdrop-filter:blur(4px);
+  align-items:center; justify-content:center; padding:16px;
+">
+  <div id="legal-modal-box" style="
+    background:#fff; border-radius:16px; width:100%; max-width:780px;
+    max-height:88vh; display:flex; flex-direction:column;
+    box-shadow:0 24px 64px rgba(10,30,60,0.25); overflow:hidden;
+  ">
+    <!-- Modal Header -->
+    <div style="
+      background:var(--blue); color:#fff;
+      padding:20px 28px; display:flex; align-items:center; justify-content:space-between;
+      flex-shrink:0;
+    ">
+      <!-- Tab navigation -->
+      <div style="display:flex; gap:4px; flex-wrap:wrap;">
+        <button onclick="switchLegalTab('impressum')" id="tab-impressum" class="legal-tab active-tab">🏢 Impressum</button>
+        <button onclick="switchLegalTab('datenschutz')" id="tab-datenschutz" class="legal-tab">🔒 Datenschutz</button>
+        <button onclick="switchLegalTab('agb')" id="tab-agb" class="legal-tab">📋 AGB</button>
+        <button onclick="switchLegalTab('widerruf')" id="tab-widerruf" class="legal-tab">↩️ Widerruf</button>
+        <button onclick="switchLegalTab('cookies')" id="tab-cookies" class="legal-tab">🍪 Cookies</button>
+      </div>
+      <button onclick="closeLegalModalBtn()" aria-label="Schließen" style="
+        background:rgba(255,255,255,0.12); border:none; color:#fff;
+        width:36px; height:36px; border-radius:50%; font-size:20px; cursor:pointer;
+        display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-left:12px;
+        transition:background 0.2s;
+      " onmouseover="this.style.background='rgba(255,255,255,0.25)'" onmouseout="this.style.background='rgba(255,255,255,0.12)'">×</button>
+    </div>
+
+    <!-- Modal Body (scrollable) -->
+    <div id="legal-modal-body" style="overflow-y:auto; padding:32px 36px; flex:1;">
+
+      <!-- IMPRESSUM -->
+      <div id="legal-impressum" class="legal-pane">
+        <h2 id="legal-modal-title" style="font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:1px;color:var(--blue);margin-bottom:20px;padding-bottom:14px;border-bottom:2px solid var(--blue-light);">Impressum</h2>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:16px;">Angaben gemäß § 5 Telemediengesetz (TMG) und § 55 Rundfunkstaatsvertrag (RStV).</p>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">Betreiber & Verantwortlicher</h3>
+        <address style="font-style:normal;color:var(--muted);font-size:15px;line-height:1.8;">
+          <strong>HW Waschanlagen GmbH</strong><br>
+          Industriestraße 5<br>
+          94486 Osterhofen<br>
+          Deutschland
+        </address>
+        <table style="width:100%;border-collapse:collapse;font-size:14px;margin:16px 0;">
+          <tr><td style="padding:10px 12px;border-bottom:1px solid var(--border);font-weight:600;color:var(--blue);width:180px;">Telefon</td><td style="padding:10px 12px;border-bottom:1px solid var(--border);color:var(--muted);">+49 (0) 8543 9618 29</td></tr>
+          <tr><td style="padding:10px 12px;border-bottom:1px solid var(--border);font-weight:600;color:var(--blue);">E-Mail</td><td style="padding:10px 12px;border-bottom:1px solid var(--border);color:var(--muted);"><a href="mailto:thomas.haslinger@haslinger.group" style="color:var(--blue-mid);">thomas.haslinger@haslinger.group</a></td></tr>
+          <tr><td style="padding:10px 12px;border-bottom:1px solid var(--border);font-weight:600;color:var(--blue);">Handelsregister</td><td style="padding:10px 12px;border-bottom:1px solid var(--border);color:var(--muted);">HRB 4416, Amtsgericht Deggendorf</td></tr>
+          <tr><td style="padding:10px 12px;border-bottom:1px solid var(--border);font-weight:600;color:var(--blue);">USt-IdNr.</td><td style="padding:10px 12px;border-bottom:1px solid var(--border);color:var(--muted);">DE306806694</td></tr>
+          <tr><td style="padding:10px 12px;font-weight:600;color:var(--blue);">Geschäftsführer</td><td style="padding:10px 12px;color:var(--muted);">Thomas Haslinger</td></tr>
+        </table>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">Verantwortlich für den Inhalt (§ 55 Abs. 2 RStV)</h3>
+        <address style="font-style:normal;color:var(--muted);font-size:15px;line-height:1.8;">Thomas Haslinger<br>Industriestraße 5, 94486 Osterhofen</address>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">Streitbeilegung</h3>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:10px;">Die Europäische Kommission stellt unter <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener" style="color:var(--blue-mid);">ec.europa.eu/consumers/odr</a> eine Plattform zur Online-Streitbeilegung bereit.</p>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:10px;">Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">Haftung für Inhalte</h3>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:10px;">Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen.</p>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">Haftung für Links</h3>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:10px;">Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">Urheberrecht</h3>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:10px;">Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+      </div>
+
+      <!-- DATENSCHUTZ -->
+      <div id="legal-datenschutz" class="legal-pane" style="display:none;">
+        <h2 style="font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:1px;color:var(--blue);margin-bottom:20px;padding-bottom:14px;border-bottom:2px solid var(--blue-light);">Datenschutzerklärung</h2>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:10px;">Stand: Januar 2026. Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst.</p>
+        <div style="background:var(--off);border-left:4px solid var(--blue-mid);border-radius:0 8px 8px 0;padding:14px 16px;margin:16px 0;font-size:14px;color:var(--muted);">Verantwortlicher: HW Waschanlagen GmbH, Industriestraße 5, 94486 Osterhofen.</div>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">1. Verantwortlicher (Art. 4 Abs. 7 DSGVO)</h3>
+        <address style="font-style:normal;color:var(--muted);font-size:15px;line-height:1.8;">HW Waschanlagen GmbH · Thomas Haslinger<br>Industriestraße 5, 94486 Osterhofen<br>E-Mail: <a href="mailto:thomas.haslinger@haslinger.group" style="color:var(--blue-mid);">thomas.haslinger@haslinger.group</a></address>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">2. Erhobene Daten & Zweck</h3>
+        <table style="width:100%;border-collapse:collapse;font-size:14px;margin:12px 0;">
+          <tr style="background:var(--off);"><td style="padding:10px 12px;border-bottom:1px solid var(--border);font-weight:600;color:var(--blue);">Datenart</td><td style="padding:10px 12px;border-bottom:1px solid var(--border);font-weight:600;color:var(--blue);">Zweck</td><td style="padding:10px 12px;border-bottom:1px solid var(--border);font-weight:600;color:var(--blue);">Rechtsgrundlage</td></tr>
+          <tr><td style="padding:10px 12px;border-bottom:1px solid var(--border);color:var(--muted);">Name, E-Mail, Telefon</td><td style="padding:10px 12px;border-bottom:1px solid var(--border);color:var(--muted);">Buchungsabwicklung</td><td style="padding:10px 12px;border-bottom:1px solid var(--border);color:var(--muted);">Art. 6 I lit. b DSGVO</td></tr>
+          <tr><td style="padding:10px 12px;border-bottom:1px solid var(--border);color:var(--muted);">Fahrzeugdaten</td><td style="padding:10px 12px;border-bottom:1px solid var(--border);color:var(--muted);">Leistungserbringung</td><td style="padding:10px 12px;border-bottom:1px solid var(--border);color:var(--muted);">Art. 6 I lit. b DSGVO</td></tr>
+          <tr><td style="padding:10px 12px;color:var(--muted);">IP-Adresse, Browserdaten</td><td style="padding:10px 12px;color:var(--muted);">Websitebetrieb</td><td style="padding:10px 12px;color:var(--muted);">Art. 6 I lit. f DSGVO</td></tr>
+        </table>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">3. Speicherdauer</h3>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:10px;">Buchungsdaten werden für die Dauer der Geschäftsbeziehung sowie gesetzlicher Aufbewahrungsfristen (i.d.R. 10 Jahre nach HGB/AO) gespeichert.</p>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">4. Weitergabe an Dritte</h3>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:10px;">Eine Weitergabe Ihrer Daten an Dritte erfolgt nur, soweit zur Vertragserfüllung erforderlich. Keine Übertragung an Drittländer außerhalb der EU/EWR.</p>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">5. Ihre Rechte (Art. 15–21 DSGVO)</h3>
+        <ul style="padding-left:20px;color:var(--muted);font-size:15px;margin-bottom:12px;">
+          <li style="margin-bottom:6px;">Auskunft über Ihre gespeicherten Daten (Art. 15)</li>
+          <li style="margin-bottom:6px;">Berichtigung unrichtiger Daten (Art. 16)</li>
+          <li style="margin-bottom:6px;">Löschung Ihrer Daten (Art. 17)</li>
+          <li style="margin-bottom:6px;">Einschränkung der Verarbeitung (Art. 18)</li>
+          <li style="margin-bottom:6px;">Datenübertragbarkeit (Art. 20)</li>
+          <li style="margin-bottom:6px;">Widerspruch gegen die Verarbeitung (Art. 21)</li>
+        </ul>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:10px;">Kontakt: <a href="mailto:thomas.haslinger@haslinger.group" style="color:var(--blue-mid);">thomas.haslinger@haslinger.group</a></p>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">6. Beschwerderecht</h3>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:10px;">Sie haben das Recht, sich bei der zuständigen Datenschutzaufsichtsbehörde zu beschweren: Bayerisches Landesamt für Datenschutzaufsicht (BayLDA), Promenade 18, 91522 Ansbach.</p>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">7. SSL-Verschlüsselung</h3>
+        <p style="color:var(--muted);font-size:15px;">Diese Website nutzt SSL-Verschlüsselung (HTTPS) zum Schutz Ihrer Daten.</p>
+      </div>
+
+      <!-- AGB -->
+      <div id="legal-agb" class="legal-pane" style="display:none;">
+        <h2 style="font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:1px;color:var(--blue);margin-bottom:20px;padding-bottom:14px;border-bottom:2px solid var(--blue-light);">Allgemeine Geschäftsbedingungen</h2>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:10px;">Stand: Januar 2026. Diese AGB regeln die Nutzung der Dienstleistungen der HW Waschanlagen GmbH.</p>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">§ 1 Geltungsbereich</h3>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:10px;">Diese AGB gelten für alle Leistungen der HW Waschanlagen GmbH (nachfolgend „Betreiber"), insbesondere Fahrzeugwäsche, Fahrzeugpflege und Innenreinigung.</p>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">§ 2 Vertragsschluss</h3>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:10px;">Der Vertrag kommt zustande, wenn der Kunde eine Buchungsanfrage stellt und der Betreiber diese schriftlich bestätigt. Buchungsanfragen sind zunächst unverbindliche Anfragen.</p>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">§ 3 Preise und Zahlung</h3>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:10px;">Es gelten die zum Zeitpunkt der Buchungsbestätigung gültigen Preise. Bezahlung erfolgt vor Ort in bar oder per EC-Karte.</p>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">§ 4 Stornierung & Rücktritt</h3>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:10px;">Kostenfreie Stornierung bis <strong>24 Stunden vor dem gebuchten Termin</strong>. Bei späterer Stornierung kann eine Bearbeitungsgebühr von 5,00 € erhoben werden.</p>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">§ 5 Haftung & Gewährleistung</h3>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:10px;">Der Betreiber haftet für Schäden, die nachweislich durch grobe Fahrlässigkeit entstanden sind. Für Vorschäden übernimmt der Betreiber keine Haftung. Kunden werden gebeten, Vorschäden vor der Wäsche zu melden.</p>
+        <div style="background:#fef3dc;border-left:4px solid #f4a100;border-radius:0 8px 8px 0;padding:14px 16px;margin:16px 0;font-size:14px;color:#92620a;">Bitte entfernen Sie externe Antennen und fragile Anbauteile vor der Nutzung. Der Betreiber übernimmt keine Haftung für nicht ordnungsgemäß befestigte Fahrzeugteile.</div>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">§ 6 SB-Waschboxen</h3>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:10px;">Die SB-Waschboxen sind nur für PKW und Kleinlastwagen geeignet. Der Kunde ist verpflichtet, Hinweisschilder zu beachten. Schäden durch Fehlbedienung gehen zu Lasten des Kunden.</p>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">§ 7 Schlussbestimmungen</h3>
+        <p style="color:var(--muted);font-size:15px;">Es gilt deutsches Recht. Gerichtsstand ist Deggendorf. Sollten einzelne Bestimmungen unwirksam sein, bleiben die übrigen Bestimmungen gültig.</p>
+      </div>
+
+      <!-- WIDERRUF -->
+      <div id="legal-widerruf" class="legal-pane" style="display:none;">
+        <h2 style="font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:1px;color:var(--blue);margin-bottom:20px;padding-bottom:14px;border-bottom:2px solid var(--blue-light);">Widerrufsrecht</h2>
+        <div style="background:var(--off);border-left:4px solid var(--blue-mid);border-radius:0 8px 8px 0;padding:14px 16px;margin-bottom:16px;font-size:14px;color:var(--muted);"><strong>Hinweis:</strong> Bei Dienstleistungen, die auf ausdrücklichen Wunsch des Kunden vollständig vor Ablauf der Widerrufsfrist erbracht wurden, erlischt das Widerrufsrecht gemäß § 356 Abs. 4 BGB.</div>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">Widerrufsbelehrung</h3>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:10px;"><strong>Widerrufsrecht:</strong> Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen.</p>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:10px;">Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (<strong>HW Waschanlagen GmbH, Industriestraße 5, 94486 Osterhofen, E-Mail: thomas.haslinger@haslinger.group</strong>) mittels einer eindeutigen Erklärung informieren.</p>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">Muster-Widerrufsformular</h3>
+        <div style="background:var(--off);border:1px solid var(--border);border-radius:8px;padding:20px;font-size:14px;color:var(--muted);line-height:1.8;">
+          An: HW Waschanlagen GmbH, Industriestraße 5, 94486 Osterhofen<br>
+          E-Mail: thomas.haslinger@haslinger.group<br><br>
+          Hiermit widerrufe ich den Vertrag über die Erbringung der folgenden Dienstleistung:<br><br>
+          Bestellt am: _______________<br>
+          Name des Verbrauchers: _______________<br>
+          Anschrift: _______________<br>
+          Datum: _______________
+        </div>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">Folgen des Widerrufs</h3>
+        <p style="color:var(--muted);font-size:15px;">Bei einem wirksamen Widerruf erstatten wir alle erhaltenen Zahlungen unverzüglich, spätestens binnen vierzehn Tagen ab Eingang Ihrer Widerrufserklärung.</p>
+      </div>
+
+      <!-- COOKIES -->
+      <div id="legal-cookies" class="legal-pane" style="display:none;">
+        <h2 style="font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:1px;color:var(--blue);margin-bottom:20px;padding-bottom:14px;border-bottom:2px solid var(--blue-light);">Cookie-Richtlinie</h2>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:10px;">Diese Seite informiert Sie gemäß § 25 TTDSG und Art. 5 Abs. 3 ePrivacy-Richtlinie über den Einsatz von Cookies.</p>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">Was sind Cookies?</h3>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:10px;">Cookies sind kleine Textdateien, die beim Besuch einer Website auf Ihrem Endgerät gespeichert werden.</p>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">Technisch notwendige Cookies</h3>
+        <table style="width:100%;border-collapse:collapse;font-size:14px;margin:12px 0;">
+          <tr style="background:var(--off);"><td style="padding:10px 12px;border-bottom:1px solid var(--border);font-weight:600;color:var(--blue);">Cookie</td><td style="padding:10px 12px;border-bottom:1px solid var(--border);font-weight:600;color:var(--blue);">Zweck</td><td style="padding:10px 12px;border-bottom:1px solid var(--border);font-weight:600;color:var(--blue);">Laufzeit</td></tr>
+          <tr><td style="padding:10px 12px;border-bottom:1px solid var(--border);color:var(--muted);">cookie_consent</td><td style="padding:10px 12px;border-bottom:1px solid var(--border);color:var(--muted);">Speichert Ihre Cookie-Einwilligung</td><td style="padding:10px 12px;border-bottom:1px solid var(--border);color:var(--muted);">1 Jahr</td></tr>
+          <tr><td style="padding:10px 12px;color:var(--muted);">buchungen</td><td style="padding:10px 12px;color:var(--muted);">Buchungsanfragen (lokal, nur Ihr Gerät)</td><td style="padding:10px 12px;color:var(--muted);">Session</td></tr>
+        </table>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">Optionale Cookies</h3>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:10px;">Folgende Cookies werden nur mit Ihrer Einwilligung gesetzt:</p>
+        <table style="width:100%;border-collapse:collapse;font-size:14px;margin:12px 0;">
+          <tr style="background:var(--off);"><td style="padding:10px 12px;border-bottom:1px solid var(--border);font-weight:600;color:var(--blue);">Kategorie</td><td style="padding:10px 12px;border-bottom:1px solid var(--border);font-weight:600;color:var(--blue);">Anbieter</td><td style="padding:10px 12px;border-bottom:1px solid var(--border);font-weight:600;color:var(--blue);">Zweck</td></tr>
+          <tr><td style="padding:10px 12px;border-bottom:1px solid var(--border);color:var(--muted);">Analyse</td><td style="padding:10px 12px;border-bottom:1px solid var(--border);color:var(--muted);">Google Analytics</td><td style="padding:10px 12px;border-bottom:1px solid var(--border);color:var(--muted);">Websitestatistiken, anonymisiert</td></tr>
+          <tr><td style="padding:10px 12px;color:var(--muted);">Marketing</td><td style="padding:10px 12px;color:var(--muted);">Google Ads</td><td style="padding:10px 12px;color:var(--muted);">Werbung & Conversion-Tracking</td></tr>
+        </table>
+        <div style="background:var(--off);border-left:4px solid var(--blue-mid);border-radius:0 8px 8px 0;padding:14px 16px;margin:16px 0;font-size:14px;color:var(--muted);">Wir setzen aktuell keine Analyse- oder Marketing-Cookies ohne Ihre ausdrückliche Einwilligung.</div>
+        <h3 style="font-size:17px;font-weight:600;color:var(--blue);margin:20px 0 8px;">Einwilligung verwalten</h3>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:12px;">Sie können Ihre Cookie-Einwilligung jederzeit zurücksetzen:</p>
+        <button onclick="localStorage.removeItem('cookie_consent'); closeLegalModalBtn(); setTimeout(()=>{ document.getElementById('cookie-banner').classList.remove('hidden'); }, 300);" style="background:var(--blue);color:#fff;border:none;padding:10px 18px;border-radius:8px;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:14px;font-weight:500;">🍪 Cookie-Einwilligung zurücksetzen</button>
+      </div>
+
+    </div><!-- /modal body -->
+  </div><!-- /modal box -->
+</div><!-- /modal overlay -->
+
+<style>
+.legal-tab {
+  background: rgba(255,255,255,0.1);
+  border: none; color: rgba(255,255,255,0.75);
+  padding: 7px 14px; border-radius: 7px;
+  font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500;
+  cursor: pointer; transition: all 0.2s; white-space: nowrap;
+}
+.legal-tab:hover { background: rgba(255,255,255,0.2); color: #fff; }
+.legal-tab.active-tab { background: var(--accent); color: var(--blue); font-weight: 700; }
+</style>
+
+<script>
+// ─── LEGAL MODAL ─────────────────────────────────────────────
+function openLegal(section) {
+  const overlay = document.getElementById('legal-modal-overlay');
+  overlay.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+  switchLegalTab(section || 'impressum');
+  // Scroll modal body to top
+  document.getElementById('legal-modal-body').scrollTop = 0;
+}
+
+function switchLegalTab(section) {
+  // Hide all panes
+  document.querySelectorAll('.legal-pane').forEach(p => p.style.display = 'none');
+  // Remove active from all tabs
+  document.querySelectorAll('.legal-tab').forEach(t => t.classList.remove('active-tab'));
+  // Show selected pane
+  const pane = document.getElementById('legal-' + section);
+  if (pane) pane.style.display = 'block';
+  // Activate tab
+  const tab = document.getElementById('tab-' + section);
+  if (tab) tab.classList.add('active-tab');
+  // Scroll to top
+  document.getElementById('legal-modal-body').scrollTop = 0;
+}
+
+function closeLegalModal(e) {
+  if (e.target === document.getElementById('legal-modal-overlay')) {
+    closeLegalModalBtn();
+  }
+}
+
+function closeLegalModalBtn() {
+  document.getElementById('legal-modal-overlay').style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+// Close with Escape key
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeLegalModalBtn();
+});
+</script>
+</body>
+</html>
